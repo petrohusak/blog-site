@@ -1,0 +1,112 @@
+.controlPanel{
+    text-align: center;    
+}
+
+.addPostButton{
+   text-align: center;
+   position: relative; 
+   left: -5px;
+   margin: 10px;
+}
+
+.postIdInput{
+    width: auto;    
+    position: relative;
+    text-align: center;
+    /* left: 50vh; */
+}
+
+.sortButton{
+    width: 200px;
+    height: 75px;
+    padding: 5px;
+}
+
+.changeAccessButton{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    left: -15px;
+}
+
+.changeAccessDiv{
+    text-align: center;
+    margin: 10px;
+}
+
+.adminField{
+    text-align: center;
+    margin: 10px;
+}
+
+.sortByIdButton{
+    position: relative;
+    left: -8px;
+    margin: 5px;
+}
+
+.addField{
+    text-align: center;
+}
+
+.confirmButton{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    position: relative;
+    left: 100px;
+    top: 65px;
+}
+
+.inputIdField{
+    width: 50px;
+}
+
+.inputBodyField{
+    width: 185px;
+    height: 200px;
+}
+
+.editDeletePostButtons{
+    margin: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 5px
+}
+
+.deletePostButton{
+    position: relative;
+    left: 10px;
+    width: auto;
+    height: auto;
+}
+
+.editPostButton{
+    width: 105px;
+}
+
+.editField{
+    text-align: center;
+}
+
+.confirmEditButton{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    position: relative;
+    left: 70px;
+    top: 63px;
+}
+
+.inputTitleField{
+    width: 250px;
+    height: 25px;
+}
+
+.inputEditBodyField{
+    position: relative;
+    left: 55px;
+    width: 250px;
+    height: 500px;
+}
+

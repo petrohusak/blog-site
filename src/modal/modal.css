@@ -1,0 +1,32 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.modal.active{
+    transform: scale(1);
+}
+
+.modalContent{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    height: auto;
+    width: auto;
+    overflow: auto;
+}
+
+.closeModalButton{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    margin: 10px;
+}

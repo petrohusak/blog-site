@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Posts from "./components/Posts";
+import ControlForm from "./components/ControlForm";
+import React, { useEffect, useState } from "react";
+import { connect, useDispatch } from "react-redux";
+import { loadAllData } from './redux/actions.js'
+import './style.css'
 
-function App() {
+
+const App =()=>{
+  const [firstLoad, setFirstLoad] = useState(true)
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    if(firstLoad === true){
+      setFirstLoad(false)
+      dispatch(loadAllData())      
+    }
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container pt-3">
+      <div className="row">
+        <div className="col">
+          <ControlForm/>
+        </div>
+      </div>
+
+      <div className="row allPosts">
+        <div className="col">
+          <Posts />
+        </div>
+      </div>
+
     </div>
-  );
+  )
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+      props: state.allData,
+  }
+}
+
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,7 @@
+export const ADD_POST = 'ADD_POST'
+export const CHANGE_ACCESS = 'CHANGE_ACCESS'
+export const LOAD_ALL_DATA = 'LOAD_ALL_DATA'
+export const DELETE_POST = 'DELETE_POST'
+export const CHANGE_POST = 'CHANGE_POST'
+export const REBUILD_STATE = 'REBUILD_STATE'
+export const SET_SORT_TYPE = 'SET_SORT_TYPE'
